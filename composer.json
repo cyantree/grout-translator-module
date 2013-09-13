@@ -21,7 +21,7 @@
         "zendframework/zend-cache": "2.2.*",
         "zendframework/zend-serializer": "2.2.*"
     },
-    "scripts": {
-        "grout-module-name": "Cyantree/ServiceModule"
+    "extra": {
+        "grout-module-name": "Cyantree/TranslatorModule"
     }
 }
