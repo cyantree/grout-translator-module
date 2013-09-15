@@ -25,7 +25,7 @@ class TranslatorModule extends Module
         if(!$this->app->config->developmentMode){
             $c = new Filesystem();
             $o = new FilesystemOptions();
-            $o->setCacheDir($this->app->parseUri($config->cacheDirectory));
+            $o->setCacheDir($this->app->cacheStorage->createStorage($this->id));
             $c->setOptions($o);
             $translator->setCache($c);
         }

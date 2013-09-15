@@ -5,6 +5,5 @@ class TranslatorConfig
 {
     public $defaultLanguage = 'en';
     public $contexts = array();
-    public $cacheDirectory = 'data://zend-cache/';
     public $translationsDirectory = 'data://locale/';
 }
