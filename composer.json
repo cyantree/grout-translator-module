@@ -17,6 +17,7 @@
     "require": {
         "php": ">=5.3.2",
         "cyantree/grout-module-installer": "0.0.*",
+        "cyantree/grout": ">=0.0.7",
         "zendframework/zend-i18n": "2.2.*",
         "zendframework/zend-cache": "2.2.*",
         "zendframework/zend-serializer": "2.2.*"
