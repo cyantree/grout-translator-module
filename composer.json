@@ -1,5 +1,6 @@
 {
     "name": "cyantree/grout-translator-module",
+    "version": "1.0",
     "type": "grout-module",
     "description": "module for translations",
     "keywords": ["grout", "i18n", "translation"],
@@ -8,6 +9,11 @@
     "authors": [
         {"name": "Christoph Schreiber", "email": "mail@cyantree.com"}
     ],
+    "autoload": {
+        "psr-4": {
+            "Grout\\Cyantree\\TranslatorModule\\": ["", "source/"]
+        }
+    },
     "repositories": [
         {
             "type": "composer",
@@ -15,9 +21,7 @@
         }
     ],
     "require": {
-        "php": ">=5.3.2",
-        "cyantree/grout-module-installer": "0.0.*",
-        "cyantree/grout": ">=0.0.7",
+        "cyantree/grout": "1.*",
         "zendframework/zend-i18n": "2.2.*",
         "zendframework/zend-cache": "2.2.*",
         "zendframework/zend-serializer": "2.2.*"
