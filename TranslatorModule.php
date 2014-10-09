@@ -25,7 +25,7 @@ class TranslatorModule extends Module
         /** @var TranslatorConfig $config */
         $this->moduleConfig = $config = $this->app->configs->getConfig($this->id);
 
-        if(!$this->app->getConfig()->developmentMode){
+        if (!$this->app->getConfig()->developmentMode) {
             $c = new Filesystem();
             $o = new FilesystemOptions();
             $o->setCacheDir($this->app->cacheStorage->createStorage($this->id));
@@ -37,12 +37,12 @@ class TranslatorModule extends Module
         $translator->setLocale($config->defaultLanguage);
 
         $folder = $this->app->parseUri($config->translationsDirectory);
-        foreach($config->contexts as $context => $file){
-            if(is_int($context)){
+        foreach ($config->contexts as $context => $file) {
+            if (is_int($context)) {
                 $context = $file;
                 $file .= '.mo';
             }
-            $translator->addTranslationFilePattern('gettext', $folder, '%s/'.$file, $context);
+            $translator->addTranslationFilePattern('gettext', $folder, '%s/' . $file, $context);
         }
 
         $this->translator = $translator;
