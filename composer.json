@@ -17,10 +17,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Grout\\Cyantree\\TranslatorModule\\": [
-                "",
-                "source/"
-            ]
+            "Grout\\Cyantree\\TranslatorModule\\": ""
         }
     },
     "repositories": [
